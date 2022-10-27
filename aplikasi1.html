@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+    <title>Aplikasi Ubah Warna - INPG-PKJ-29-037</title>
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Aplikasi</button>
+                    <div class="dropdown-content">
+                        <a href="aplikasi1.html" target="_blank">Aplikasi Ubah Warna</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h1>Aplikasi Ubah Warna</h1>
+        <div>
+            <label>Warna latar: </label>
+            <input type="color" id="bgColor" />
+        </div>
+        <div>
+            <label>Warna teks: </label>
+            <input type="color" id="textColor" />
+        </div>
+
+        <script>
+            const bgColor = document.getElementById("bgColor");
+            const textColor = document.getElementById("textColor");
+
+            bgColor.addEventListener("change", (event) => {
+                document.body.style.backgroundColor = bgColor.value;
+            });
+            textColor.addEventListener("change", (event) => {
+                document.body.style.color = textColor.value;
+            });
+        </script>
+
+    </main>
+
+    <footer id="footer">
+        ©2022..<a href="https://prakerja.ramdani.id/" target="_blank">prakerja.ramdani.id</a>
+    </footer>
+
+</body>
+
+</html>
